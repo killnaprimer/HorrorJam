@@ -1,0 +1,12 @@
+newmtl concrete
+map_Kd concrete.jpg
+bump concretr_norm.png
+Kd 1 1 1
+d 1
+
+newmtl floor
+map_Kd floor.jpg
+bump floor_norm.png
+Kd 1 1 1
+d 1
+
