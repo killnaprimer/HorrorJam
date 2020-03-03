@@ -15,7 +15,8 @@ public class TriggerComponent : MonoBehaviour
     
     [Header("Dependencies")]
     public GameObject[] listeners;
-    
+
+    private bool done;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,15 +33,22 @@ public class TriggerComponent : MonoBehaviour
     {
         if (other.CompareTag("Player") && nextUseTime < Time.time)
         {
-            for (int i = 0; i < listeners.Length; i++)
-            {
-                listeners[i].SendMessage("Interact", this.gameObject, SendMessageOptions.DontRequireReceiver);
-            }
-            if (!isReusable) this.GetComponent<Collider>().enabled = false;
-            nextUseTime = Time.time + cooldown;
+            Interact(this.gameObject);
         }
     }
-    
+
+
+    public void Interact(GameObject instigator)
+    {
+        if (done) return;
+        for (int i = 0; i < listeners.Length; i++)
+        {
+            listeners[i].SendMessage("Interact", instigator, SendMessageOptions.DontRequireReceiver);
+        }
+
+        if (!isReusable) done = true;
+        nextUseTime = Time.time + cooldown;
+    }
     void OnDrawGizmos()
     {
         // Draw a semitransparent blue cube at the transforms position
