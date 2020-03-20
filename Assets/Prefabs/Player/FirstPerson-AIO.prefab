@@ -79,98 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &1575302437
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1575302438}
-  - component: {fileID: 1575302439}
-  m_Layer: 8
-  m_Name: Spot Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1575302438
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575302437}
-  m_LocalRotation: {x: 0.07104153, y: 0.99720377, z: 0.022347033, w: -0.006196202}
-  m_LocalPosition: {x: 0.07999698, y: 0.42, z: -1.56}
-  m_LocalScale: {x: 3.4649076, y: 3.4649065, z: 3.464906}
-  m_Children: []
-  m_Father: {fileID: 7574202789741218481}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -2.605, y: 180.527, z: 8.1380005}
---- !u!108 &1575302439
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575302437}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 0
-  m_Shape: 0
-  m_Color: {r: 1, g: 0.9742639, b: 0.4764151, a: 1}
-  m_Intensity: 1.5
-  m_Range: 20
-  m_SpotAngle: 51
-  m_InnerSpotAngle: 5
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1 &1129895495175522
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,11 +479,11 @@ MonoBehaviour:
   walkSpeed: 4
   sprintSpeed: 8
   jumpPower: 5
-  canJump: 1
+  canJump: 0
   canHoldJump: 0
-  useStamina: 0
-  staminaDepletionSpeed: 2
-  staminaLevel: 50
+  useStamina: 1
+  staminaDepletionSpeed: 1
+  staminaLevel: 7
   speed: 0
   staminaInternal: 0
   _crouchModifiers:
@@ -704,6 +612,7 @@ MonoBehaviour:
   ui: {fileID: 0}
   gun: {fileID: 7574202790295744418}
   ammo: 16
+  quest: 0
   medkit: 1
 --- !u!114 &6530250032989986981
 MonoBehaviour:
@@ -719,7 +628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fpsCam: {fileID: 20724644957976244}
   _ui: {fileID: 0}
-  range: 10
+  range: 5
 --- !u!114 &1770708703731699095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,6 +643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 25
   maxHealth: 100
+  levelManager: {fileID: 0}
 --- !u!1 &4338099559219941403
 GameObject:
   m_ObjectHideFlags: 0

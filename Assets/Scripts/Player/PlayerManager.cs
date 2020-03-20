@@ -9,8 +9,8 @@ public class PlayerManager : MonoBehaviour
     public PlayerUi ui;
     public SimpleGun gun;
 
-    public int ammo = 16;
-
+    public int ammo = 12;
+    public int quest = 0;
     public int medkit = 1;
     // Start is called before the first frame update
     void Start()
@@ -24,12 +24,14 @@ public class PlayerManager : MonoBehaviour
         
     }
 
-    public void AddItem(int amm, int kit)
+    public void AddItem(int amm, int kit, int filter)
     {
         ammo = ammo + amm;
         medkit = medkit + kit;
         gun.UpdateAmmo();
         ui.SetMedText(medkit);
+        quest = quest + filter;
+        ui.UpdateQuest(quest);
     }
 
     public void SetHealth(float health, float maxHealth)

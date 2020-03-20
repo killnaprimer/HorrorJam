@@ -14,8 +14,8 @@ public class SimpleGun : MonoBehaviour
     private bool shotDelay = false;
     
     //Reloading
-    public int maxAmmo = 16;
-    private int currAmmo = 16;
+    public int maxAmmo = 12;
+    private int currAmmo = 12;
     private bool isReloading = false;
     public int ammo = 40;
     
@@ -32,6 +32,8 @@ public class SimpleGun : MonoBehaviour
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        ammo = maxAmmo;
+        UpdateAmmo();
     }
 
     void Update()
@@ -106,7 +108,7 @@ public class SimpleGun : MonoBehaviour
 
              if (manager.ammo >= maxAmmo-currAmmo)
              {
-                 manager.ammo = manager.ammo - maxAmmo+currAmmo;
+                 manager.ammo = manager.ammo - (maxAmmo-currAmmo);
                  currAmmo = maxAmmo;
                  
              }

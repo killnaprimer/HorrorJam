@@ -12,6 +12,8 @@ public class PlayerUi : MonoBehaviour
     public GameObject interactor;
     public Image healthScreen;
     public Image healthBar;
+    public Text questText;
+    
     public void SetAmmoText(int currAmmo, int maxAmmo)
     {
         ammoText.text = currAmmo.ToString() + "/" + maxAmmo.ToString();
@@ -32,6 +34,18 @@ public class PlayerUi : MonoBehaviour
         Color color = new Color(1,1,1,(1-health/maxHealth));
         healthScreen.color = color;
         healthBar.fillAmount = health / maxHealth;
+    }
+
+    public void UpdateQuest(int filter)
+    {
+        if (filter <= 0)
+        {
+            questText.text = "Найдите водный фильтр.";
+        }
+        else
+        {
+            questText.text = "Фильтр найден. Покиньте станцию.";
+        }
     }
     
     

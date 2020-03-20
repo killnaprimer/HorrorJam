@@ -1,0 +1,17 @@
+newmtl UNIConcrete_wall_v1
+map_Kd UNIConcrete_wall_v1.psd
+bump Normal.png
+Kd 1 1 1
+d 1
+
+newmtl floor
+map_Kd floor.jpg
+bump floor_norm.png
+Kd 1 1 1
+d 1
+
+newmtl concrete
+map_Kd concrete.jpg
+Kd 1 1 1
+d 1
+

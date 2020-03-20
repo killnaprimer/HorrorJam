@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SoundComponent : MonoBehaviour
 {
+    public bool stopOnInteract;
     AudioSource audioSource;
     
     // Start is called before the first frame update
@@ -16,6 +17,13 @@ public class SoundComponent : MonoBehaviour
     // Update is called once per frame
     public void Interact(GameObject instigator)
     {
-        if (!audioSource.isPlaying) audioSource.Play();
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            if (stopOnInteract) audioSource.Stop();
+        }
     }
 }

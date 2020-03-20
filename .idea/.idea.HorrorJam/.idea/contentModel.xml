@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\UnityGames\HorrorJam" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Packs" t="Include">
+          <e p="FirstPersion AIO Pack" t="Include">
+            <e p="DemoScene" t="Include">
+              <e p="MiscScripts" t="Include">
+                <e p="Doors.cs" t="Include" />
+              </e>
+              <e p="Working Materials" t="Include">
+                <e p="GlassBumpedDistort.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Components" t="Include">
+            <e p="AutoDestructComponent.cs" t="Include" />
+            <e p="DamageComponent.cs" t="Include" />
+            <e p="EnablerComponent.cs" t="Include" />
+            <e p="ExitBlockerComponent.cs" t="Include" />
+            <e p="InteractiveComponent.cs" t="Include" />
+            <e p="LightComponent.cs" t="Include" />
+            <e p="MortalComponent.cs" t="Include" />
+            <e p="PhysicalComponent.cs" t="Include" />
+            <e p="PickupComponent.cs" t="Include" />
+            <e p="SoundComponent.cs" t="Include" />
+            <e p="SpawnerComponent.cs" t="Include" />
+            <e p="TimerComponent.cs" t="Include" />
+            <e p="TriggerComponent.cs" t="Include" />
+          </e>
+          <e p="LevelExitTrigger.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="FirstPersonAIO.cs" t="Include" />
+            <e p="PlayerHealth.cs" t="Include" />
+            <e p="PlayerInteractor.cs" t="Include" />
+            <e p="PlayerManager.cs" t="Include" />
+            <e p="PlayerUi.cs" t="Include" />
+            <e p="SimpleGun.cs" t="Include" />
+          </e>
+          <e p="SimpleCameraController.cs" t="Include" />
+          <e p="SimpleEnemy.cs" t="Include" />
+        </e>
+        <e p="ShowCursor.cs" t="Include" />
+      </e>
+      <e p="HorrorJam.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\Killnaprimer\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Killnaprimer\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_HorrorJam.1758108389.00" t="ExcludeRecursive" />
+  </component>
+</project>

@@ -18,7 +18,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 21
+    value: 35
   intensityX:
     overrideState: 0
     value: 1
@@ -56,9 +56,9 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.5
+    value: 0.35
   fastMode:
-    overrideState: 0
+    overrideState: 1
     value: 0
 --- !u!114 &-5423120385935952847
 MonoBehaviour:
@@ -78,7 +78,7 @@ MonoBehaviour:
     value: 1
   mode:
     overrideState: 0
-    value: 0
+    value: 1
   color:
     overrideState: 0
     value: {r: 0, g: 0, b: 0, a: 1}
@@ -87,10 +87,10 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.277
+    value: 0.3
   smoothness:
     overrideState: 1
-    value: 0.966
+    value: 1
   roundness:
     overrideState: 0
     value: 1
@@ -123,6 +123,35 @@ MonoBehaviour:
   - {fileID: -6922533098034886171}
   - {fileID: 6073905103353842669}
   - {fileID: 3844512762452098218}
+  - {fileID: 934544841603482818}
+--- !u!114 &934544841603482818
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  focusDistance:
+    overrideState: 1
+    value: 3
+  aperture:
+    overrideState: 0
+    value: 5.6
+  focalLength:
+    overrideState: 0
+    value: 50
+  kernelSize:
+    overrideState: 0
+    value: 1
 --- !u!114 &3844512762452098218
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -135,13 +164,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
   intensity:
     overrideState: 1
-    value: 10
+    value: 5
   threshold:
     overrideState: 1
     value: 1
@@ -191,7 +220,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 1
+    value: 1.25
   color:
     overrideState: 0
     value: {r: 0, g: 0, b: 0, a: 1}
@@ -240,10 +269,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.295
+    value: 0.15
   size:
     overrideState: 1
-    value: 0.97
+    value: 3
   lumContrib:
     overrideState: 0
     value: 0.8

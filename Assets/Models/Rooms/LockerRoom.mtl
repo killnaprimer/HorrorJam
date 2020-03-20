@@ -1,0 +1,6 @@
+newmtl tiles
+map_Kd floor.jpg
+bump floor_norm.png
+Kd 0.6 0.945098 0.8254571
+d 1
+

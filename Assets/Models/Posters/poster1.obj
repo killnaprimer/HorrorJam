@@ -1,0 +1,23 @@
+# ProBuilder 4.2.3
+# https://unity3d.com/unity/features/worldbuilding/probuilder
+# 3/15/2020 5:21:20 AM
+
+mtllib ./poster1.mtl
+o poster1
+
+g 
+v -0.01257072 -0.04209566 0
+v -0.5 -0.04209566 0
+v -0.01257072 0.6374046 0
+v -0.5 0.6374046 0
+
+vt 0.2420278 0.6528363
+vt -0.001686841 0.6528363
+vt 0.2420278 0.9925864
+vt -0.001686841 0.9925864
+
+vn 0 0 1
+
+usemtl Posters
+f 3/3/1 4/4/1 2/2/1 1/1/1
+

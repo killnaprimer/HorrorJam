@@ -6,21 +6,13 @@ using UnityEngine;
 public class InteractiveComponent : MonoBehaviour
 {
     public AudioSource audio;
-
+    public Animator _animator;
     public GameObject listener;
     // Start is called before the first frame update
-
-    public void PlaySound()
-    {
-        if (audio != null)
-        {
-            audio.Play();
-        }
-    }
     
     public void Interact(GameObject instigator)
     {
-        GetComponent<Animator>().SetTrigger("onOpen");
+        _animator.SetTrigger("onOpen");
         if (listener == null) return;
         listener.SendMessage("Interact", this.gameObject, SendMessageOptions.DontRequireReceiver);
     }

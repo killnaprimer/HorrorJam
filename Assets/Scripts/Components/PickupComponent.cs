@@ -5,8 +5,8 @@ using UnityEngine;
 public class PickupComponent : MonoBehaviour
 {
     public int ammo = 16;
-    public int kit = 0; 
-    
+    public int kit = 0;
+    public int filter = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class PickupComponent : MonoBehaviour
 
     public void Interact(GameObject player)
     {
-       player.GetComponent<PlayerManager>().AddItem(ammo, kit);
+       player.GetComponent<PlayerManager>().AddItem(ammo, kit, filter);
        Destroy(this.gameObject);
     }
 }
